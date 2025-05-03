@@ -530,6 +530,7 @@ footer {
   padding-left: 38px;
   width: 360px;
   height: 40px;
+  outline: none;
 }
 
 .modal-form-input:hover,
@@ -564,6 +565,7 @@ footer {
   border-radius: 4px;
   width: 360px;
   height: 120px;
+  outline: none;
 }
 
 .modal-form-textarea:hover,
