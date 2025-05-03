@@ -415,10 +415,10 @@ footer {
 .footer-child2{
   display: flex;
   flex-direction: column;
-  gap: 16px;
   width: 208px;
-  margin: 0;
-  margin-left: 540px;
+  height: 80px;
+  gap: 16px;
+  margin-left: 384px;
   margin-top: -100px;
 }
 .footer-icon{
@@ -438,6 +438,67 @@ footer {
 
 .footer-icon .social-link:hover{
   background-color: #31D0AA;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-child-3{
+  display: flex;
+  border: 1px solid red;
+  width: 453px;
+  height: 80px;
+  margin-left: 672px;
+  margin-top: -85px;
+  gap: 24px;
+}
+
+.footer-input-text{
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 2%; 
+}
+
+.footer-input{
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-top: 14px;
+  background-color: #2E2F42;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.footer-input::placeholder { 
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 4%;
+}
+
+.footer-button{
+  width: 165px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+
+.footer-button-container{
+  padding-top: 38px;            
+  max-width: 165px;
+}
+
+.footer-button:hover{
+  background-color: #404BBF;
+  box-shadow: 0px 4px 4px 0px #00000026;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -475,20 +536,21 @@ footer {
   border: 1px solid #0000001A;
 }
 
-.close-container:hover{
-  background-color: #404BBF;
-  fill: #FFFFFF;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .close-icon{
   position: absolute;
   width: 8px;
   height: 8px;
   fill: #2E2F42;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-container:hover + .close-icon{
+.close-container:hover{
+  background-color: #404BBF;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.close-container:hover .close-icon{
   fill: #FFFFFF;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -569,6 +631,13 @@ footer {
   outline: none;
 }
 
+.modal-form-textarea::placeholder{
+  color: #75757580;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 4%;
+}
+
 .modal-form-textarea:hover,
 .modal-form-textarea:focus{
   border-color: #4D5AE5;
@@ -596,6 +665,7 @@ footer {
   line-height: 14px;
   letter-spacing: 4%;
   color: #757575;
+  padding-top: 1px;
 }
 
 .terms-link{
