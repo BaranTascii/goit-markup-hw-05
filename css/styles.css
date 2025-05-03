@@ -455,9 +455,41 @@ footer {
 }
 
 .modal-form{
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.close-container{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #E7E9FC;
+  border: 1px solid #0000001A;
+}
+
+.close-container:hover{
+  background-color: #404BBF;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  fill: #2E2F42;
+}
+
+.close-container:hover + .close-icon{
+  fill: #FFFFFF;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-content{
@@ -467,6 +499,7 @@ footer {
   background-color: #FCFCFC;
   z-index: 11;
   padding-left: 24px;
+  box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
 }
 
 .modal-content-head{
@@ -521,6 +554,7 @@ footer {
 .modal-form-input:hover + .form-icon,
 .modal-form-input:focus + .form-icon{
   fill: #4D5AE5;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-textarea{
@@ -550,6 +584,21 @@ footer {
 .modal-form-terms{
   display: flex;
   gap: 8px;
+  max-width: 360px;
+  padding-top: 8px;
+}
+
+.terms-text{
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 4%;
+  color: #757575;
+}
+
+.terms-link{
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 4%;
 }
 
 .checkbox-icon{
@@ -559,8 +608,36 @@ footer {
 .modal-form-checkbox:checked + .modal-form-checkbox-wrapper{
   background-color: #404BBF;
   border: 1px solid #404BBF;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-wrapper .checkbox-icon{
   fill: #F4F4FD;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-button{
+  width: 169px;
+  height: 56px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 4%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+
+.modal-form-button-container{
+  padding-top: 16px;
+  padding-left: 95px;
+  max-width: 360px;
+}
+
+.modal-form-button:hover{
+  background-color: #404BBF;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
