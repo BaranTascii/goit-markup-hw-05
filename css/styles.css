@@ -518,13 +518,14 @@ footer {
   bottom: 0;
   background-color: #2E2F4266;
   z-index: 10;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .is-open{
   display: block;
+  padding-top: 80px;
+  padding-left: 516px;
 }
 
 .modal-form{
