@@ -511,10 +511,6 @@ footer {
 
 .modal{
   display: none;
-}
-
-.is-open{
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -525,6 +521,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.is-open{
+  display: block;
 }
 
 .modal-form{
