@@ -535,6 +535,16 @@ footer {
   gap: 8px;
 }
 
+.modal-content{
+  width: 408px;
+  height: 584px;
+  border-radius: 4px;
+  background-color: #FCFCFC;
+  z-index: 11;
+  padding-left: 24px;
+  box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
+}
+
 .close-container{
   position: absolute;
   display: flex;
@@ -566,16 +576,6 @@ footer {
 .close-container:hover .close-icon{
   fill: #FFFFFF;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-content{
-  width: 408px;
-  height: 584px;
-  border-radius: 4px;
-  background-color: #FCFCFC;
-  z-index: 11;
-  padding-left: 24px;
-  box-shadow: 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
 }
 
 .modal-content-head{
